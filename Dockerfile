@@ -34,4 +34,4 @@ EXPOSE 5000
 ENV PYTHONUNBUFFERED=1
 
 # Run application
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "1", "--threads", "2", "--timeout", "120", "app:app"]
+CMD ["python", "app.py"]
